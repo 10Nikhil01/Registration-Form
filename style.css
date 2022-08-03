@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+	margin-top: 2rem;
+}
+.heading{
+    text-align: center;
+}
+
+.registration-form {
+	width: 60rem;
+  margin: auto;
+ }
+
+/*.valid-feedback, .invalid-feedback{
+  display: block;
+} */
