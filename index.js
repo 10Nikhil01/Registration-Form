@@ -51,7 +51,7 @@ function validate() {
         document.getElementById("state-valid").style.display = "none";
     }
     //for zip
-    if(zipInput.length >=1){
+    if(zipInput.length >=6){
         document.getElementById("zip-valid").style.display = "block";
         document.getElementById("zip-invalid").style.display = "none";
     } else{
@@ -131,7 +131,7 @@ function stateValidation(){
 function zipValidation(){
     let zipInput = document.getElementById("zip").value;
 
-    if(zipInput.length >=1){
+    if(zipInput.length >=6){
         document.getElementById("zip-valid").style.display = "block";
         document.getElementById("zip-invalid").style.display = "none";
     } else{
