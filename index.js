@@ -1,3 +1,18 @@
+// to stop user to access thr code by right clicking then inspect
+document.addEventListener('contextmenu',(e) =>{
+  e.preventDefault();},false);
+
+//to stop user to inspect by ctrl-u to view source code and also for f12 to bring up console
+  document.addEventListener('keydown',(e) =>{
+      if(e.ctrlKey || e.keyCode == 123){
+          e.stopPropagation();
+          e.preventDefault();
+      }
+  }); 
+
+
+  //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 function validate() {
   let firstNameInput = document.getElementById("first-name").value;
   let lastNameInput = document.getElementById("last-name").value;
